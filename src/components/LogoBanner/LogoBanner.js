@@ -4,7 +4,7 @@ import opensealogo from "../../assets/opensea-logo.png";
 
 function LogoBanner() {
   return (
-    <div className="btn-gradient mb-10 flex justify-between xl:px-[138px] lg:px-[100px] md:px-[35px] sm:px-[7px] py-[10px] lg:gap-[100px] md:gap-[45px]">
+    <div className="btn-gradient flex justify-between xl:px-[138px] lg:px-[100px] md:px-[35px] sm:px-[7px] py-[10px] lg:gap-[100px] md:gap-[45px]">
       <img
         src={mbtokenlogo}
         alt="MB Token"
