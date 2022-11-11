@@ -1,7 +1,9 @@
+import HomePageIntro from "../components/HomePageIntro/HomePageIntro";
+
 function HomePage() {
   return (
     <div>
-      <p className="font-bold mt-96">dd</p>
+      <HomePageIntro />
     </div>
   );
 }

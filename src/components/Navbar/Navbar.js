@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./Navbar.css";
 import logo from "../../assets/logo.png";
 
 export default function NavBar() {
@@ -63,22 +62,25 @@ export default function NavBar() {
             }`}
           >
             <ul className="items-center xl:gap-12 justify-center space-y-5 lg:flex lg:space-x-6 lg:space-y-0">
-              <li className="text-xl text-[#434343] leading-[25px]">
+              <li className="leading-[25px]">
                 <a href="/">Home</a>
               </li>
-              <li className="text-xl text-[#434343] leading-[25px]">
+              <li className="leading-[25px]">
                 <a href="/">Place to stay</a>
               </li>
-              <li className="text-xl text-[#434343] leading-[25px]">
+              <li className="leading-[25px]">
                 <a href="/">NFTs</a>
               </li>
-              <li className="text-xl text-[#434343] leading-[25px]">
+              <li className="leading-[25px]">
                 <a href="/">Community</a>
               </li>
             </ul>
 
             <div className="mt-5 space-y-2 lg:hidden lg:inline-block">
-              <button type="submit" className="navbar-button">
+              <button
+                type="submit"
+                className="btn-gradient h-12 w-[170px] rounded-[10px]"
+              >
                 <a
                   href="/"
                   className="inline-block text-white w-full px-4 py-2 text-center rounded-md leading-5"
@@ -90,7 +92,10 @@ export default function NavBar() {
           </div>
         </div>
         <div className="hidden space-x-2 lg:inline-block">
-          <button type="submit" className="navbar-button">
+          <button
+            type="submit"
+            className="btn-gradient h-12 w-[170px] rounded-[10px]"
+          >
             <a href="/" className="px-4  py-2 text-white rounded-md leading-5">
               Connect wallet
             </a>

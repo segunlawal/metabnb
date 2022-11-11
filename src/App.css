@@ -3,5 +3,12 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Red Rose", cursive;
+  color: #434343;
   /* font-family: 'Sora', sans-serif; */
+}
+.meta-color {
+  color: #a02279;
+}
+.btn-gradient {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
 }
