@@ -1,7 +1,9 @@
-import React from "react";
-
 function HomePage() {
-  return <div>HomePage</div>;
+  return (
+    <div>
+      <p className="font-bold mt-96">dd</p>
+    </div>
+  );
 }
 
 export default HomePage;

@@ -1,3 +1,7 @@
 .App {
   text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", cursive;
+  /* font-family: 'Sora', sans-serif; */
 }
