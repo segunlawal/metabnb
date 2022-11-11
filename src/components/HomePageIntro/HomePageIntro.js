@@ -24,7 +24,7 @@ function HomePageIntro() {
           <div className="input-box text-left lg:width-[646px]">
             <input
               type="text"
-              className="placeholder:text-[#B8B8B8] placeholder:text-sm border-[1px] border-[#A3A3A3] rounded-tl-lg rounded-bl-lg xl:w-[360px] lg:w-[280px] sm:w-[400px] w-[230px] h-[54px] pl-4"
+              className="placeholder:text-[#B8B8B8] placeholder:text-sm border-[1px] border-[#A3A3A3] rounded-tl-lg rounded-bl-lg xl:w-[360px] lg:w-[280px] sm:w-[400px] w-[180px] h-[54px] pl-4"
               placeholder="Search for location"
             />
             <span>
