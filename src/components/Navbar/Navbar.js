@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
 export default function NavBar() {
@@ -9,13 +10,13 @@ export default function NavBar() {
       <div className="justify-between mx-auto lg:items-center lg:flex">
         <div>
           <div className="flex items-center justify-between lg:block">
-            <a href="/">
+            <NavLink to="/">
               <img
                 src={logo}
                 alt="Metabnb"
                 className="sm:w-[223px] w-[170px]"
               />
-            </a>
+            </NavLink>
             <div className="lg:hidden">
               <button
                 type="submit"
@@ -63,16 +64,16 @@ export default function NavBar() {
           >
             <ul className="items-center xl:gap-12 justify-center space-y-5 lg:flex lg:space-x-6 lg:space-y-0">
               <li className="leading-[25px]">
-                <a href="/">Home</a>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li className="leading-[25px]">
-                <a href="/">Place to stay</a>
+                <NavLink to="/place-to-stay">Place to stay</NavLink>
               </li>
               <li className="leading-[25px]">
-                <a href="/">NFTs</a>
+                <NavLink to="/">NFTs</NavLink>
               </li>
               <li className="leading-[25px]">
-                <a href="/">Community</a>
+                <NavLink to="/">Community</NavLink>
               </li>
             </ul>
 

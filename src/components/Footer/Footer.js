@@ -24,25 +24,25 @@ function Footer() {
             <img src={twitter} alt="twitter" className="w-[18px] h-[18px]" />
           </div>
         </div>
-        <div className="md:mb-0 mb-4">
+        <div className="md:mb-0 mb-7">
           <p className="text-lg font-bold md:mb-[23px]">Community</p>
-          <p className="text-[#F1F3F9] text-sm md:mb-4">NFT</p>
-          <p className="text-[#F1F3F9] text-sm md:mb-4">Tokens</p>
-          <p className="text-[#F1F3F9] text-sm md:mb-4">Landlords</p>
+          <p className="text-[#F1F3F9] text-sm md:mb-4 mb-2">NFT</p>
+          <p className="text-[#F1F3F9] text-sm md:mb-4 mb-2">Tokens</p>
+          <p className="text-[#F1F3F9] text-sm md:mb-4 mb-2">Landlords</p>
           <p className="text-[#F1F3F9] text-sm">Discord</p>
         </div>
-        <div className="md:mb-0 mb-4">
+        <div className="md:mb-0 mb-7">
           <p className="text-lg font-bold md:mb-[23px]">Places</p>
-          <p className="text-[#F1F3F9] text-sm md:mb-4">Castle</p>
-          <p className="text-[#F1F3F9] text-sm md:mb-4">Farms</p>
-          <p className="text-[#F1F3F9] text-sm md:mb-4">Beach</p>
+          <p className="text-[#F1F3F9] text-sm md:mb-4 mb-2">Castle</p>
+          <p className="text-[#F1F3F9] text-sm md:mb-4 mb-2">Farms</p>
+          <p className="text-[#F1F3F9] text-sm md:mb-4 mb-2">Beach</p>
           <p className="text-[#F1F3F9] text-sm">Learn more</p>
         </div>
-        <div className="md:mb-0 mb-4">
+        <div className="md:mb-0 mb-7">
           <p className="text-lg font-bold md:mb-[23px]">About us</p>
-          <p className="text-[#F1F3F9] text-sm md:mb-4">Road map</p>
-          <p className="text-[#F1F3F9] text-sm md:mb-4">Creators</p>
-          <p className="text-[#F1F3F9] text-sm md:mb-4">Career</p>
+          <p className="text-[#F1F3F9] text-sm md:mb-4 mb-2">Road map</p>
+          <p className="text-[#F1F3F9] text-sm md:mb-4 mb-2">Creators</p>
+          <p className="text-[#F1F3F9] text-sm md:mb-4 mb-2">Career</p>
           <p className="text-[#F1F3F9] text-sm">Contact us</p>
         </div>
       </div>
