@@ -12,7 +12,7 @@ function HomePageLearnMore() {
         </p>
         <button
           type="submit"
-          className="float-left rounded-lg bg-white h-12 w-[156px] text-[#A02279]"
+          className="float-left rounded-lg bg-white h-12 w-[156px] text-[#A02279] md:mb-20"
         >
           Learn more
         </button>
