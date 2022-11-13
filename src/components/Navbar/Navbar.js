@@ -2,7 +2,8 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
-export default function NavBar() {
+// eslint-disable-next-line no-unused-vars
+export default function NavBar({ showModal, setShowModal }) {
   const [navbar, setNavbar] = useState(false);
 
   return (
@@ -80,14 +81,10 @@ export default function NavBar() {
             <div className="mt-5 space-y-2 lg:hidden lg:inline-block">
               <button
                 type="submit"
-                className="btn-gradient h-12 w-[170px] rounded-[10px]"
+                className="btn-gradient h-12 w-[170px] rounded-[10px] inline-block text-white w-full px-4 py-2 text-center rounded-md leading-5"
+                onClick={() => setShowModal(true)}
               >
-                <a
-                  href="/"
-                  className="inline-block text-white w-full px-4 py-2 text-center rounded-md leading-5"
-                >
-                  Connect wallet
-                </a>
+                Connect wallet
               </button>
             </div>
           </div>
@@ -95,11 +92,10 @@ export default function NavBar() {
         <div className="hidden space-x-2 lg:inline-block">
           <button
             type="submit"
-            className="btn-gradient h-12 w-[170px] rounded-[10px]"
+            className="btn-gradient h-12 w-[170px] rounded-[10px] px-4  py-2 text-white rounded-md leading-5"
+            onClick={() => setShowModal(true)}
           >
-            <a href="/" className="px-4  py-2 text-white rounded-md leading-5">
-              Connect wallet
-            </a>
+            Connect wallet
           </button>
         </div>
       </div>

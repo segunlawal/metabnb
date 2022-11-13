@@ -2,7 +2,7 @@ import location from "../../assets/setting-5.png";
 
 function Filter() {
   return (
-    <div className="mt-[115px] flex w-fit mx-auto lg:gap-[65px] md:gap-10">
+    <div className="lg:mt-[115px] sm:mt-[50px] mt-10 flex w-fit mx-auto lg:gap-[65px] md:gap-10">
       <div className="text-center flex xl:gap-12 lg:flex lg:gap-5 md:grid md:grid-cols-4 md:gap-5 grid grid-cols-3 gap-y-3">
         <p className="text-xl">Restaurant</p>
         <p className="text-xl">Cottage</p>
