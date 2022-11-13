@@ -3,7 +3,7 @@ import flipcards from "../../assets/flip-cards.png";
 function HomePageLearnMore() {
   return (
     <div className="lg:flex gap-[122px] bg-[#A02279] text-white border-[1px] border-black lg:px-[100px] md:px-20 px-5">
-      <div className="lg:w-[39%] lg:mt-[186px] md:mt-20 mt-10">
+      <div className="lg:w-[40%] lg:mt-[186px] md:mt-20 mt-10">
         <p className="font-bold text-left text-5xl">Metabnb NFTs</p>
         <p className="text-lg text-left leading-[35px] my-[35px]">
           Discover our NFT gift cards collection. Loyal customers gets amazing
@@ -17,8 +17,8 @@ function HomePageLearnMore() {
           Learn more
         </button>
       </div>
-      <div className="lg:w-[61%] lg:my-[100px] mt-28 mb-10 md:my-40">
-        <img src={flipcards} alt="NFTs" className="lg:mx-0 mx-auto" />
+      <div className="lg:w-[60%] lg:my-[100px] mt-28 mb-10 md:my-40 mx-auto w-fit">
+        <img src={flipcards} alt="NFTs" className=" mx-auto" />
       </div>
     </div>
   );

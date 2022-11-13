@@ -10,7 +10,7 @@ function HomePageIntro() {
     <div className="lg:mt-[125px] xl:mx-[100px] lg:mx-[68px] md:mx-[50px] sm:mx-[20px] mx-[10px] mb-16">
       <div className="lg:flex gap-x-24">
         <div className="mt-7 lg:w-[52%]">
-          <h1 className="text-left text-[50px] sm:leading-[78px] leading-[60px] tracking-[-0.02em] xl:w-[646px]">
+          <h1 className="text-left sm:text-[50px] text-[35px] sm:leading-[78px] leading-[45px] tracking-[-0.02em] xl:w-[646px]">
             Rent a <span className="meta-color font-bold">Place </span> away
             from
             <span className="meta-color font-bold"> Home </span>in the
@@ -21,16 +21,16 @@ function HomePageIntro() {
             metaverse, get a chance to turn your imagination to reality at your
             comfort zone
           </p>
-          <div className="input-box text-left lg:width-[646px]">
+          <div className="input-box text-left">
             <input
               type="text"
-              className="placeholder:text-[#B8B8B8] placeholder:text-sm border-[1px] border-[#A3A3A3] rounded-tl-lg rounded-bl-lg xl:w-[360px] lg:w-[280px] sm:w-[400px] w-[180px] h-[54px] pl-4"
+              className="xl:w-[390px] lg:w-[250px] md:w-[450px] sm:w-[340px] w-[190px] placeholder:text-[#B8B8B8] placeholder:text-sm border-t border-l border-b border-[#A3A3A3] rounded-tl-lg rounded-bl-lg py-[14px] pl-4 focus:outline-none"
               placeholder="Search for location"
             />
             <span>
               <button
                 type="submit"
-                className="btn-gradient text-white rounded-tr-lg rounded-br-lg xl:w-48 md:w-[123px] w-[120px] h-[54px]"
+                className="btn-gradient text-white rounded-tr-lg rounded-br-lg xl:w-[160px] lg:w-[120px] md:w-[180px] sm:w-[200px] w-[110px] h-[54px]"
               >
                 Search
               </button>

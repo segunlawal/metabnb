@@ -10,19 +10,23 @@ import fivestars from "../../assets/five-star.png";
 
 function HomePageInspiration() {
   const frames = [
-    frame5,
-    frame6,
-    frame7,
-    frame8,
-    frame1,
-    frame2,
-    frame3,
-    frame4,
+    { frame: frame5, id: 5 },
+    { frame: frame6, id: 6 },
+    { frame: frame7, id: 7 },
+    { frame: frame8, id: 8 },
+    { frame: frame1, id: 1 },
+    { frame: frame2, id: 2 },
+    { frame: frame3, id: 3 },
+    { frame: frame4, id: 4 },
   ];
+
   const alltheframes = frames.map((oneframe) => (
-    <div className="border-[1px] border-[#D7D7D7] rounded-[15px] pt-4 w-[292px] h-[372px] ">
+    <div
+      key={oneframe.id}
+      className="border-[1px] border-[#D7D7D7] rounded-[15px] pt-4 w-[292px] h-[372px] "
+    >
       <img
-        src={oneframe}
+        src={oneframe.frame}
         alt="Place to visit"
         className="w-[260px] h-[265px] mx-auto"
       />
