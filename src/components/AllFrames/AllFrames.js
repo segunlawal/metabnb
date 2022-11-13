@@ -58,7 +58,7 @@ function AllFrames() {
     </div>
   ));
   return (
-    <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-x-10 gap-y-6 mt-14 mx-auto w-fit mb-[92px]">
+    <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 mt-14 mx-auto w-fit mb-[92px]">
       {alltheframes}
     </div>
   );
