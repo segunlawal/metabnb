@@ -1,13 +1,27 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
 // eslint-disable-next-line no-unused-vars
 export default function NavBar({ showModal, setShowModal }) {
+  const navMenu = useRef(null);
   const [navbar, setNavbar] = useState(false);
+  const closeOpenMenus = (e) => {
+    if (navMenu.current && navbar && !navMenu.current.contains(e.target)) {
+      setNavbar(false);
+    }
+  };
+  document.addEventListener("mousedown", closeOpenMenus);
+  function handleClick() {
+    setShowModal(true);
+    setNavbar(false);
+  }
 
   return (
-    <nav className=" lg:mt-[43px] mt-[15px] xl:mx-[100px] lg:mx-[68px] md:mx-[50px] sm:mx-[20px] mx-[10px]">
+    <nav
+      ref={navMenu}
+      className=" lg:mt-[43px] mt-[15px] xl:mx-[100px] lg:mx-[68px] md:mx-[50px] sm:mx-[20px] mx-[10px]"
+    >
       <div className="justify-between mx-auto lg:items-center lg:flex">
         <div>
           <div className="flex items-center justify-between lg:block">
@@ -63,26 +77,64 @@ export default function NavBar({ showModal, setShowModal }) {
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center xl:gap-12 justify-center space-y-5 lg:flex lg:space-x-6 lg:space-y-0">
+            <ul className="bg- lg:bg-inherit items-center xl:gap-12 justify-center space-y-5 lg:flex lg:space-x-6 lg:space-y-0">
               <li className="leading-[25px]">
-                <NavLink to="/">Home</NavLink>
+                <NavLink
+                  to="/"
+                  reloadDocument
+                  className={({ isActive }) =>
+                    isActive
+                      ? " flex items-center text-[#a02279] font-bold"
+                      : "hover:text-[#a02279] flex items-center"
+                  }
+                >
+                  Home
+                </NavLink>
               </li>
               <li className="leading-[25px]">
-                <NavLink to="/place-to-stay">Place to stay</NavLink>
+                <NavLink
+                  reloadDocument
+                  to="/place-to-stay"
+                  className={({ isActive }) =>
+                    isActive
+                      ? " flex items-center text-[#a02279] font-bold"
+                      : "hover:text-[#a02279] flex items-center"
+                  }
+                >
+                  Place to stay
+                </NavLink>
               </li>
               <li className="leading-[25px]">
-                <NavLink to="/">NFTs</NavLink>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive
+                      ? " flex items-center "
+                      : "hover:text-[#a02279] flex items-center pointer-events-none"
+                  }
+                >
+                  NFTs
+                </NavLink>
               </li>
               <li className="leading-[25px]">
-                <NavLink to="/">Community</NavLink>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive
+                      ? " flex items-center"
+                      : "hover:text-[#a02279] flex items-center pointer-events-none"
+                  }
+                >
+                  Community
+                </NavLink>
               </li>
             </ul>
 
             <div className="mt-5 space-y-2 lg:hidden lg:inline-block">
               <button
                 type="submit"
-                className="btn-gradient h-12 w-[170px] rounded-[10px] inline-block text-white w-full px-4 py-2 text-center rounded-md leading-5"
-                onClick={() => setShowModal(true)}
+                className="btn-gradient h-12 w-full rounded-[10px] inline-block text-white w-full px-4 py-2 text-center rounded-md leading-5"
+                onClick={handleClick}
               >
                 Connect wallet
               </button>

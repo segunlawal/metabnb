@@ -12,7 +12,7 @@ function Footer() {
           <img
             src={metabnblogo}
             alt="Metabnb"
-            className="w-[233px] h-[40px] md:mb-24 mb-10"
+            className="sm:w-[233px] sm:h-[40px] w-1/2 md:mb-24 mb-10"
           />
           <div className="flex gap-x-8 md:mb-[55px] mb-7">
             <img src={facebook} alt="facebook" className="w-[18px] h-[18px]" />
@@ -21,7 +21,11 @@ function Footer() {
               alt="instagram"
               className="w-[18px] h-[18px]"
             />
-            <img src={twitter} alt="twitter" className="w-[18px] h-[18px]" />
+            <img
+              src={twitter}
+              alt="twitter"
+              className="w-[18px] h-[14.62px] mt-auto"
+            />
           </div>
         </div>
         <div className="md:mb-0 mb-7">

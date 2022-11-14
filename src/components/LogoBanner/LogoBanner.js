@@ -13,12 +13,12 @@ function LogoBanner() {
       <img
         src={metamusklogo}
         alt="METAMUSK"
-        className="md:w-[214px] md:h-[38px] w-[107px] h-[19px]"
+        className="md:w-[214px] md:h-[38px] w-[107px] h-[19px] mt-1"
       />
       <img
         src={opensealogo}
         alt="OpenSea"
-        className="md:w-[198px] md:h-[41px] w-[99px] h-[20.5px]"
+        className="md:w-[198px] md:h-[41px] w-[99px] h-[20.5px] mt-1"
       />
     </div>
   );

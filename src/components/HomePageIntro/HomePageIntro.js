@@ -16,7 +16,7 @@ function HomePageIntro() {
             <span className="meta-color font-bold"> Home </span>in the
             <span className="meta-color font-bold"> Metaverse</span>
           </h1>
-          <p className="text-left lg:my-12 my-7 text-2xl xl:w-[636px]">
+          <p className="text-left lg:my-12 my-7 sm:text-2xl xl:w-[636px]">
             we provide you access to luxury and affordable houses in the
             metaverse, get a chance to turn your imagination to reality at your
             comfort zone
@@ -30,7 +30,7 @@ function HomePageIntro() {
             <span>
               <button
                 type="submit"
-                className="btn-gradient text-white rounded-tr-lg rounded-br-lg xl:w-[160px] lg:w-[120px] md:w-[180px] sm:w-[200px] w-[110px] h-[54px]"
+                className="btn-gradient text-white rounded-tr-lg rounded-br-lg xl:w-[160px] lg:w-[120px] md:w-[180px] sm:w-[200px] w-4/12 h-[54px]"
               >
                 Search
               </button>

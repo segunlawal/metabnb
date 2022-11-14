@@ -23,20 +23,22 @@ function HomePageInspiration() {
   const alltheframes = frames.map((oneframe) => (
     <div
       key={oneframe.id}
-      className="border-[1px] border-[#D7D7D7] rounded-[15px] pt-4 w-[292px] h-[372px] "
+      className="border-[1px] border-[#D7D7D7] rounded-[15px] pt-4 xl:w-[292px] xl:h-[372px] lg:w-[232px] lg:h-[310px] w-[292px] h-[372px]"
     >
       <img
         src={oneframe.frame}
         alt="Place to visit"
-        className="w-[260px] h-[265px] mx-auto"
+        className="w-[260px] h-[265px] lg:w-[187.5px] lg:h-[198.75px] xl:w-[260px] xl:h-[265px] mx-auto"
       />
       <div className="flex justify-between mt-4 mx-4">
         <p className="text-xs">Desert king</p>
         <p className="text-xs font-bold">1MBT per night</p>
       </div>
       <div className="flex justify-between mt-[10px] mx-4">
-        <p className="text-xs">2345km away</p>
-        <p className="text-xs">available for 2weeks stay</p>
+        <p className="xl:text-xs lg:text-[0.62rem] text-xs">2345km away</p>
+        <p className="xl:text-xs lg:text-[0.62rem] text-xs">
+          available for 2weeks stay
+        </p>
       </div>
       <img
         src={fivestars}
@@ -47,10 +49,10 @@ function HomePageInspiration() {
   ));
   return (
     <div className="mb-[53px]">
-      <p className="text-black font-bold text-5xl md:mx-5 mt-[58px] mb-[43px]">
+      <p className="text-black font-bold sm:text-5xl text-3xl md:mx-5 mt-[58px] mb-[43px]">
         Inspiration for your next adventure
       </p>
-      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 mx-auto w-fit">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 xl:gap-6 gap-6 lg:gap-4 mx-auto w-fit">
         {alltheframes}
       </div>
     </div>
